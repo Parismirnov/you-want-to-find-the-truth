@@ -1,0 +1,47 @@
+#root {
+    width: 100%; 
+    max-width: 1400px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 13rem;
+
+    background-image: url("https://www.universalpictures-latam.com/tl_files/content/movies/puss_in_boots_2/gallery/27.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:"Danfo", serif;
+
+}
+
+#root h1{
+    font-family: "Grechen Fuemen", serif;
+    color: white;
+    font-size: 50px;
+}
+
+.div-img{
+    width: 15rem;
+    height: 10rem;
+}
+
+.div-img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.guia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guia span{
+    font-size: 40px;
+    color: white;
+}

@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: #f5718e;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.card-front {
+    background-color: #ffcc00;
+    transform: rotateY(0deg);
+    color: white;
+    font-family: "Grechen Fuemen", serif;
+
+}
+
+.card-back {
+    background-color: #ff6666;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card.open .card-inner {
+    transform: rotateY(180deg);
+}
